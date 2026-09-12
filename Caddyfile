@@ -1,0 +1,4 @@
+elfillos.xyz {
+    root * /srv
+    file_server
+}
