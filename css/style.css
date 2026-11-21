@@ -1,13 +1,14 @@
 
   :root{
-    --bg:#0B0F1A;
-    --card:rgba(255,255,255,0.045);
-    --card-border:rgba(255,255,255,0.06);
-    --text:#E6EDF3;
-    --muted:#8B98A5;
-    --teal:#5EEAD4;
-    --sky:#38BDF8;
-    --blue:#3B82F6;
+    --bg:#17131C;
+    --surface:#241B30;
+    --card:rgba(36,27,48,0.62);
+    --card-border:rgba(197,166,247,0.14);
+    --text:#D8CDE8;
+    --muted:#A394B8;
+    --teal:#C5A6F7;
+    --sky:#B99AEF;
+    --blue:#9B70D6;
     --grad:linear-gradient(135deg, var(--teal), var(--sky) 55%, var(--blue));
   }
 
@@ -28,7 +29,7 @@
     z-index:0;
     overflow:hidden;
     pointer-events:none;
-    background:linear-gradient(180deg, #050810 0%, #070B14 45%, #0A0F1A 100%);
+    background:linear-gradient(180deg, #100D16 0%, #17131C 48%, #241B30 100%);
   }
   .bg-stars{
     position:absolute;
@@ -36,7 +37,7 @@
     opacity:0.55;
     background-image:
       radial-gradient(1.5px 1.5px at 8% 12%, #fff, transparent),
-      radial-gradient(1px 1px at 18% 24%, #cfe, transparent),
+      radial-gradient(1px 1px at 18% 24%, #D8CDE8, transparent),
       radial-gradient(1.5px 1.5px at 27% 8%, #fff, transparent),
       radial-gradient(1px 1px at 36% 30%, #fff, transparent),
       radial-gradient(1.5px 1.5px at 46% 15%, #cfe, transparent),
@@ -148,7 +149,7 @@
     width:100%;
     height:100%;
     border-radius:50%;
-    background:#111820;
+    background:var(--surface);
     display:flex;
     align-items:center;
     justify-content:center;
@@ -318,8 +319,8 @@
   }
   .social-card:hover{
     transform:translateY(-6px);
-    border-color:rgba(94,234,212,0.35);
-    box-shadow:0 18px 46px rgba(56,189,248,0.18);
+    border-color:rgba(197,166,247,0.38);
+    box-shadow:0 18px 46px rgba(155,112,214,0.2);
   }
   .social-icon{
     width:44px;
@@ -328,7 +329,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    background:linear-gradient(135deg, rgba(94,234,212,0.14), rgba(59,130,246,0.14));
+    background:linear-gradient(135deg, rgba(197,166,247,0.16), rgba(155,112,214,0.16));
   }
   .social-icon svg{ width:22px; height:22px; }
   .social-card span{ font-size:0.92rem; color:var(--muted); }
@@ -347,13 +348,13 @@ footer {
     display: flex;
     align-items: center;
 
-    border: 1px solid rgba(255,255,255,.08);
+    border: 1px solid rgba(197,166,247,.16);
     border-radius: 8px;
-    background: rgba(255,255,255,.03);
+    background: rgba(36,27,48,.5);
     backdrop-filter: blur(14px);
 
     box-shadow: inset 0 0 0 1px rgba(255,255,255,.03),
-                0 0 20px rgba(0,0,0,.25);
+                0 0 20px rgba(10,7,15,.35);
 }
 .track {
     display: flex;
